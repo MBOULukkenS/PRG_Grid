@@ -17,8 +17,13 @@ namespace Grid
                                   .First();
             }
         }
-        
+
         private void Awake()
+        {
+            PopulateGrid();
+        }
+
+        private void PopulateGrid()
         {
             for (int x = 0; x < TargetGrid.Width; x++)
             for (int y = 0; y < TargetGrid.Height; y++)
