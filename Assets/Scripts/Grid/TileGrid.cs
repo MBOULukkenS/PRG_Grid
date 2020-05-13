@@ -9,9 +9,9 @@ namespace Grid
 {
     public sealed class TileGrid : MonoBehaviour, IEnumerable<Tile>
     {
-        [SerializeField]
+        [SerializeField, HideInInspector]
         private int _height;
-        [SerializeField]
+        [SerializeField, HideInInspector]
         private int _width;
         
         private readonly ObservableCollection<Tile> _tiles = new ObservableCollection<Tile>();

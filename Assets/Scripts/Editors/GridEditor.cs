@@ -22,6 +22,7 @@ namespace Editors
         public override void OnInspectorGUI()
         {
             serializedObject.Update();
+            DrawDefaultInspector();
 
             using (EditorGUI.ChangeCheckScope scope = new EditorGUI.ChangeCheckScope())
             {
